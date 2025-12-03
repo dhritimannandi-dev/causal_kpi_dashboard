@@ -1,5 +1,7 @@
 streamlit
 pandas
-matplotlib
 networkx
+matplotlib
 pyvis
+ollama
+
