@@ -1,0 +1,150 @@
+================================================================================
+DATA-FIRST CAUSAL ANALYSIS REPORT
+================================================================================
+
+GRAPH SUMMARY
+--------------------------------------------------------------------------------
+Total Nodes: 24
+Total Edges: 51
+Average Confidence: 0.845
+
+TOP 20 RELATIONSHIPS BY CONFIDENCE
+--------------------------------------------------------------------------------
+
+1. net_promoter_score → customer_satisfaction_score
+   Data R²: 0.987 | Confidence: 0.992
+   Feasibility: FEASIBLE
+   Mechanism: Customer satisfaction is influenced by their Net Promoter Score, which is a measure of their loyalty.
+
+2. customer_lifetime_value → avg_order_value
+   Data R²: 0.984 | Confidence: 0.991
+   Feasibility: FEASIBLE
+   Mechanism: Customer Lifetime Value is influenced by the Average Order Value, as customers with higher lifetime value tend to place larger orders.
+
+3. total_items_sold → order_count
+   Data R²: 0.983 | Confidence: 0.990
+   Feasibility: FEASIBLE
+   Mechanism: Total items sold is influenced by the number of orders, as each order contributes to the total items sold.
+
+4. total_items_sold → unique_customers
+   Data R²: 0.983 | Confidence: 0.990
+   Feasibility: FEASIBLE
+   Mechanism: Total items sold is influenced by the number of unique customers, as each customer contributes to the total items sold.
+
+5. total_items_sold → customer_acquisition
+   Data R²: 0.983 | Confidence: 0.990
+   Feasibility: FEASIBLE
+   Mechanism: Total items sold is influenced by customer acquisition, as new customers contribute to the total items sold.
+
+6. order_count → unique_products_sold
+   Data R²: 0.970 | Confidence: 0.982
+   Feasibility: FEASIBLE
+   Mechanism: Order count is influenced by the number of unique products sold, as each order contributes to the total unique products sold.
+
+7. unique_customers → unique_products_sold
+   Data R²: 0.970 | Confidence: 0.982
+   Feasibility: FEASIBLE
+   Mechanism: Unique customers are influenced by the number of unique products sold, as each product appeals to a specific set of customers.
+
+8. customer_acquisition → unique_products_sold
+   Data R²: 0.970 | Confidence: 0.982
+   Feasibility: FEASIBLE
+   Mechanism: Customer acquisition is influenced by the number of unique products sold, as new customers are attracted to new product offerings.
+
+9. total_items_sold → unique_products_sold
+   Data R²: 0.962 | Confidence: 0.977
+   Feasibility: FEASIBLE
+   Mechanism: Total items sold is influenced by the number of unique products sold, as each product contributes to the total items sold.
+
+10. total_revenue → total_items_sold
+   Data R²: 0.956 | Confidence: 0.974
+   Feasibility: FEASIBLE
+   Mechanism: Total revenue is influenced by the total items sold, as each item contributes to the total revenue.
+
+11. geographic_reach_cities → order_count
+   Data R²: 0.947 | Confidence: 0.968
+   Feasibility: FEASIBLE
+   Mechanism: Increased geographic reach leads to more orders, as customers are exposed to Olist's products and services.
+
+12. geographic_reach_cities → unique_customers
+   Data R²: 0.947 | Confidence: 0.968
+   Feasibility: FEASIBLE
+   Mechanism: Same as above, increased geographic reach leads to more unique customers.
+
+13. geographic_reach_cities → customer_acquisition
+   Data R²: 0.947 | Confidence: 0.968
+   Feasibility: FEASIBLE
+   Mechanism: Same as above, increased geographic reach leads to more customer acquisition.
+
+14. total_revenue → order_count
+   Data R²: 0.942 | Confidence: 0.965
+   Feasibility: FEASIBLE
+   Mechanism: Increased revenue is a result of more orders being placed.
+
+15. total_revenue → unique_customers
+   Data R²: 0.942 | Confidence: 0.965
+   Feasibility: FEASIBLE
+   Mechanism: Same as above, increased revenue is a result of more unique customers.
+
+16. total_revenue → customer_acquisition
+   Data R²: 0.942 | Confidence: 0.965
+   Feasibility: FEASIBLE
+   Mechanism: Same as above, increased revenue is a result of more customer acquisition.
+
+17. geographic_reach_cities → total_items_sold
+   Data R²: 0.941 | Confidence: 0.965
+   Feasibility: FEASIBLE
+   Mechanism: Increased geographic reach leads to more items sold, as customers are exposed to Olist's products and services.
+
+18. total_revenue → unique_products_sold
+   Data R²: 0.935 | Confidence: 0.961
+   Feasibility: FEASIBLE
+   Mechanism: Increased revenue is a result of more unique products being sold.
+
+19. geographic_reach_cities → unique_products_sold
+   Data R²: 0.920 | Confidence: 0.952
+   Feasibility: FEASIBLE
+   Mechanism: Increased geographic reach leads to more unique products being sold, as customers are exposed to Olist's product offerings.
+
+20. products_per_order → review_submission_rate
+   Data R²: 0.905 | Confidence: 0.943
+   Feasibility: FEASIBLE
+   Mechanism: The more products per order, the higher the review submission rate, as customers are more likely to leave feedback after purchasing multiple items.
+
+
+================================================================================
+KPI-SPECIFIC ANALYSES
+================================================================================
+
+
+KPI: total_revenue
+--------------------------------------------------------------------------------
+Number of influencing factors: 4
+
+Top 10 Contributors:
+  1. total_items_sold
+     R²: 0.624 | Path length: 3 | Path: total_items_sold → market_concentration_sellers → geographic_reach_cities → total_revenue
+  2. unique_products_sold
+     R²: 0.652 | Path length: 3 | Path: unique_products_sold → market_concentration_sellers → geographic_reach_cities → total_revenue
+  3. market_concentration_sellers
+     R²: 0.715 | Path length: 2 | Path: market_concentration_sellers → geographic_reach_cities → total_revenue
+  4. geographic_reach_cities
+     R²: 0.871 | Path length: 1 | Path: geographic_reach_cities → total_revenue
+
+
+KPI: revenue_growth_rate
+--------------------------------------------------------------------------------
+Number of influencing factors: 2
+
+Top 10 Contributors:
+  1. customer_growth_rate
+     R²: 0.503 | Path length: 1 | Path: customer_growth_rate → revenue_growth_rate
+  2. order_growth_rate
+     R²: 0.503 | Path length: 1 | Path: order_growth_rate → revenue_growth_rate
+
+
+KPI: revenue_ma4
+--------------------------------------------------------------------------------
+Number of influencing factors: 0
+
+Top 10 Contributors:

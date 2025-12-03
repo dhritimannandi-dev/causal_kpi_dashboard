@@ -1,0 +1,1053 @@
+{
+  "graph_summary": {
+    "nodes": 24,
+    "edges": 51,
+    "avg_confidence": 0.8448249910012947
+  },
+  "node_classification": {
+    "L0": [],
+    "L1": [],
+    "L2": [],
+    "MEASURABLE": [
+      "order_count",
+      "unique_customers",
+      "unique_products_sold",
+      "products_per_order"
+    ],
+    "KPI": [
+      "total_revenue",
+      "customer_satisfaction_score",
+      "customer_lifetime_value",
+      "revenue_growth_rate",
+      "avg_order_value"
+    ]
+  },
+  "validated_edges": [
+    {
+      "source": "net_promoter_score",
+      "target": "customer_satisfaction_score",
+      "r2": 0.9871673878804081,
+      "r2_reverse": 0.987167387880407,
+      "correlation": 0.9999999999999999,
+      "direction_confidence": 1.1246552897264635e-15,
+      "p_value": 0.0,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Customer satisfaction is influenced by their Net Promoter Score, which is a measure of their loyalty.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer experience",
+        "product quality"
+      ],
+      "final_confidence": 0.9923004327282449,
+      "include_in_graph": true
+    },
+    {
+      "source": "customer_lifetime_value",
+      "target": "avg_order_value",
+      "r2": 0.9844493934127265,
+      "r2_reverse": 0.9844493934127261,
+      "correlation": 1.0000000000000002,
+      "direction_confidence": 4.511041530642499e-16,
+      "p_value": 0.0,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Customer Lifetime Value is influenced by the Average Order Value, as customers with higher lifetime value tend to place larger orders.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "purchase frequency",
+        "order size"
+      ],
+      "final_confidence": 0.9906696360476359,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_items_sold",
+      "target": "order_count",
+      "r2": 0.9830421035092477,
+      "r2_reverse": 0.9818532256395335,
+      "correlation": 0.9985440552141216,
+      "direction_confidence": 0.001209386521157319,
+      "p_value": 9.173407313599401e-106,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Total items sold is influenced by the number of orders, as each order contributes to the total items sold.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "purchase frequency",
+        "order size"
+      ],
+      "final_confidence": 0.9898252621055487,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_items_sold",
+      "target": "unique_customers",
+      "r2": 0.9830421035092477,
+      "r2_reverse": 0.9818532256395335,
+      "correlation": 0.9985440552141216,
+      "direction_confidence": 0.001209386521157319,
+      "p_value": 9.173407313599401e-106,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Total items sold is influenced by the number of unique customers, as each customer contributes to the total items sold.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer acquisition",
+        "purchase frequency"
+      ],
+      "final_confidence": 0.9898252621055487,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_items_sold",
+      "target": "customer_acquisition",
+      "r2": 0.9830421035092477,
+      "r2_reverse": 0.9818532256395335,
+      "correlation": 0.9985440552141216,
+      "direction_confidence": 0.001209386521157319,
+      "p_value": 9.173407313599401e-106,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Total items sold is influenced by customer acquisition, as new customers contribute to the total items sold.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "marketing efforts",
+        "customer loyalty"
+      ],
+      "final_confidence": 0.9898252621055487,
+      "include_in_graph": true
+    },
+    {
+      "source": "order_count",
+      "target": "unique_products_sold",
+      "r2": 0.9702169719707645,
+      "r2_reverse": 0.9622920047266205,
+      "correlation": 0.9909809462528177,
+      "direction_confidence": 0.008168242231473607,
+      "p_value": 2.3490947876428192e-73,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Order count is influenced by the number of unique products sold, as each order contributes to the total unique products sold.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "product offerings",
+        "purchase frequency"
+      ],
+      "final_confidence": 0.9821301831824587,
+      "include_in_graph": true
+    },
+    {
+      "source": "unique_customers",
+      "target": "unique_products_sold",
+      "r2": 0.9702169719707645,
+      "r2_reverse": 0.9622920047266205,
+      "correlation": 0.9909809462528177,
+      "direction_confidence": 0.008168242231473607,
+      "p_value": 2.3490947876428192e-73,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Unique customers are influenced by the number of unique products sold, as each product appeals to a specific set of customers.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "product offerings",
+        "customer loyalty"
+      ],
+      "final_confidence": 0.9821301831824587,
+      "include_in_graph": true
+    },
+    {
+      "source": "customer_acquisition",
+      "target": "unique_products_sold",
+      "r2": 0.9702169719707645,
+      "r2_reverse": 0.9622920047266205,
+      "correlation": 0.9909809462528177,
+      "direction_confidence": 0.008168242231473607,
+      "p_value": 2.3490947876428192e-73,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Customer acquisition is influenced by the number of unique products sold, as new customers are attracted to new product offerings.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "marketing efforts",
+        "product offerings"
+      ],
+      "final_confidence": 0.9821301831824587,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_items_sold",
+      "target": "unique_products_sold",
+      "r2": 0.9622491914172134,
+      "r2_reverse": 0.9554033740943422,
+      "correlation": 0.987512217423426,
+      "direction_confidence": 0.0071143913488653085,
+      "p_value": 1.3665819901877044e-67,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Total items sold is influenced by the number of unique products sold, as each product contributes to the total items sold.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "product offerings",
+        "purchase frequency"
+      ],
+      "final_confidence": 0.9773495148503281,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "total_items_sold",
+      "r2": 0.9559680015994108,
+      "r2_reverse": 0.9364740999058007,
+      "correlation": 0.9830531520176429,
+      "direction_confidence": 0.02039179309453375,
+      "p_value": 3.4222152079859278e-62,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Total revenue is influenced by the total items sold, as each item contributes to the total revenue.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "price point",
+        "customer loyalty"
+      ],
+      "final_confidence": 0.9735808009596465,
+      "include_in_graph": true
+    },
+    {
+      "source": "geographic_reach_cities",
+      "target": "order_count",
+      "r2": 0.9466337691953447,
+      "r2_reverse": 0.893795072487346,
+      "correlation": 0.97150282778658,
+      "direction_confidence": 0.05581746439587983,
+      "p_value": 4.892420951226246e-53,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Increased geographic reach leads to more orders, as customers are exposed to Olist's products and services.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer base expansion"
+      ],
+      "final_confidence": 0.9679802615172068,
+      "include_in_graph": true
+    },
+    {
+      "source": "geographic_reach_cities",
+      "target": "unique_customers",
+      "r2": 0.9466337691953447,
+      "r2_reverse": 0.893795072487346,
+      "correlation": 0.97150282778658,
+      "direction_confidence": 0.05581746439587983,
+      "p_value": 4.892420951226246e-53,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Same as above, increased geographic reach leads to more unique customers.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer base expansion"
+      ],
+      "final_confidence": 0.9679802615172068,
+      "include_in_graph": true
+    },
+    {
+      "source": "geographic_reach_cities",
+      "target": "customer_acquisition",
+      "r2": 0.9466337691953447,
+      "r2_reverse": 0.893795072487346,
+      "correlation": 0.97150282778658,
+      "direction_confidence": 0.05581746439587983,
+      "p_value": 4.892420951226246e-53,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Same as above, increased geographic reach leads to more customer acquisition.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer base expansion"
+      ],
+      "final_confidence": 0.9679802615172068,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "order_count",
+      "r2": 0.9415441468485128,
+      "r2_reverse": 0.9189003854558143,
+      "correlation": 0.9800353718463558,
+      "direction_confidence": 0.024049601358035664,
+      "p_value": 2.6702748248431985e-59,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Increased revenue is a result of more orders being placed.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "sales volume"
+      ],
+      "final_confidence": 0.9649264881091077,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "unique_customers",
+      "r2": 0.9415441468485128,
+      "r2_reverse": 0.9189003854558143,
+      "correlation": 0.9800353718463558,
+      "direction_confidence": 0.024049601358035664,
+      "p_value": 2.6702748248431985e-59,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Same as above, increased revenue is a result of more unique customers.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer base expansion"
+      ],
+      "final_confidence": 0.9649264881091077,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "customer_acquisition",
+      "r2": 0.9415441468485128,
+      "r2_reverse": 0.9189003854558143,
+      "correlation": 0.9800353718463558,
+      "direction_confidence": 0.024049601358035664,
+      "p_value": 2.6702748248431985e-59,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Same as above, increased revenue is a result of more customer acquisition.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "sales volume"
+      ],
+      "final_confidence": 0.9649264881091077,
+      "include_in_graph": true
+    },
+    {
+      "source": "geographic_reach_cities",
+      "target": "total_items_sold",
+      "r2": 0.940839246849826,
+      "r2_reverse": 0.8917498745985978,
+      "correlation": 0.9718087934785796,
+      "direction_confidence": 0.05217615274404441,
+      "p_value": 3.1618511939915775e-53,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Increased geographic reach leads to more items sold, as customers are exposed to Olist's products and services.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer base expansion",
+        "product offerings"
+      ],
+      "final_confidence": 0.9645035481098956,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "unique_products_sold",
+      "r2": 0.9347506668151646,
+      "r2_reverse": 0.9070634948416612,
+      "correlation": 0.9725485605957435,
+      "direction_confidence": 0.02961984725599372,
+      "p_value": 1.078470148350016e-53,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Increased revenue is a result of more unique products being sold.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "product offerings",
+        "sales volume"
+      ],
+      "final_confidence": 0.9608504000890987,
+      "include_in_graph": true
+    },
+    {
+      "source": "geographic_reach_cities",
+      "target": "unique_products_sold",
+      "r2": 0.9204154652586624,
+      "r2_reverse": 0.8428760982792776,
+      "correlation": 0.9635943028620867,
+      "direction_confidence": 0.08424387671234324,
+      "p_value": 9.604691772516129e-49,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Increased geographic reach leads to more unique products being sold, as customers are exposed to Olist's product offerings.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer base expansion",
+        "product offerings"
+      ],
+      "final_confidence": 0.9522492791551974,
+      "include_in_graph": true
+    },
+    {
+      "source": "unique_products_sold",
+      "target": "market_concentration_sellers",
+      "r2": 0.9120531933834238,
+      "r2_reverse": 0.9098839555307747,
+      "correlation": 0.9636734023419202,
+      "direction_confidence": 0.002378411553608989,
+      "p_value": 8.799058662231232e-49,
+      "feasibility": "QUESTIONABLE",
+      "mechanism": "This relationship is questionable, as market concentration among sellers may not be directly influenced by the number of unique products sold.",
+      "confidence": "MEDIUM",
+      "alternative": "Alternative explanation: This relationship might be influenced by other factors such as competition, product diversity, or supplier relationships.",
+      "domain_factors": [
+        "market dynamics",
+        "supplier relationships"
+      ],
+      "final_confidence": 0.7472319160300542,
+      "include_in_graph": true
+    },
+    {
+      "source": "products_per_order",
+      "target": "review_submission_rate",
+      "r2": 0.9050356152589205,
+      "r2_reverse": 0.8815247570089861,
+      "correlation": 0.969582443288705,
+      "direction_confidence": 0.025977826566756915,
+      "p_value": 6.82705811603568e-52,
+      "feasibility": "FEASIBLE",
+      "mechanism": "The more products per order, the higher the review submission rate, as customers are more likely to leave feedback after purchasing multiple items.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "customer behavior",
+        "product variety"
+      ],
+      "final_confidence": 0.9430213691553523,
+      "include_in_graph": true
+    },
+    {
+      "source": "order_delivered_rate",
+      "target": "products_per_order",
+      "r2": 0.9015965419156671,
+      "r2_reverse": 0.718040472300351,
+      "correlation": 0.9029648396741322,
+      "direction_confidence": 0.2035900328824525,
+      "p_value": 8.084077949218598e-32,
+      "feasibility": "FEASIBLE",
+      "mechanism": "When orders are delivered on time, customers are more likely to purchase multiple products in a single order, as they trust the delivery process.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "delivery performance",
+        "customer satisfaction"
+      ],
+      "final_confidence": 0.9409579251494002,
+      "include_in_graph": true
+    },
+    {
+      "source": "market_concentration_sellers",
+      "target": "order_count",
+      "r2": 0.8815133013384939,
+      "r2_reverse": 0.8709498808820549,
+      "correlation": 0.9303920532423522,
+      "direction_confidence": 0.011983279708201159,
+      "p_value": 1.7168100481236993e-37,
+      "feasibility": "FEASIBLE",
+      "mechanism": "When there is a high concentration of sellers, customers have more options and are more likely to place multiple orders.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "market competition",
+        "customer choice"
+      ],
+      "final_confidence": 0.9289079808030963,
+      "include_in_graph": true
+    },
+    {
+      "source": "market_concentration_sellers",
+      "target": "unique_customers",
+      "r2": 0.8815133013384939,
+      "r2_reverse": 0.8709498808820549,
+      "correlation": 0.9303920532423522,
+      "direction_confidence": 0.011983279708201159,
+      "p_value": 1.7168100481236993e-37,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Similarly, a high concentration of sellers attracts more unique customers who are drawn to the variety of options.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "market competition",
+        "customer acquisition"
+      ],
+      "final_confidence": 0.9289079808030963,
+      "include_in_graph": true
+    },
+    {
+      "source": "market_concentration_sellers",
+      "target": "customer_acquisition",
+      "r2": 0.8815133013384939,
+      "r2_reverse": 0.8709498808820549,
+      "correlation": 0.9303920532423522,
+      "direction_confidence": 0.011983279708201159,
+      "p_value": 1.7168100481236993e-37,
+      "feasibility": "FEASIBLE",
+      "mechanism": "The same principle applies to customer acquisition, as a high concentration of sellers leads to increased marketing efforts and visibility.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "market competition",
+        "customer acquisition"
+      ],
+      "final_confidence": 0.9289079808030963,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_items_sold",
+      "target": "market_concentration_sellers",
+      "r2": 0.8731710443392369,
+      "r2_reverse": 0.8682723147685611,
+      "correlation": 0.9205443947425058,
+      "direction_confidence": 0.005610274873902607,
+      "p_value": 3.193321608402157e-35,
+      "feasibility": "QUESTIONABLE",
+      "mechanism": "This relationship could be due to a correlation between the overall market size and the concentration of sellers, rather than a causal link.",
+      "confidence": "MEDIUM",
+      "alternative": "The relationship might be driven by the overall market growth rather than the seller concentration.",
+      "domain_factors": [
+        "market size",
+        "seller dynamics"
+      ],
+      "final_confidence": 0.7239026266035422,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "market_concentration_sellers",
+      "r2": 0.8729374621538053,
+      "r2_reverse": 0.8585593405390731,
+      "correlation": 0.9156658899152221,
+      "direction_confidence": 0.016470964116097074,
+      "p_value": 3.32832469001116e-34,
+      "feasibility": "QUESTIONABLE",
+      "mechanism": "Similar to the previous relationship, this could be due to a correlation between revenue and market size rather than a causal link.",
+      "confidence": "MEDIUM",
+      "alternative": "The relationship might be driven by the overall market growth rather than the seller concentration.",
+      "domain_factors": [
+        "market size",
+        "revenue dynamics"
+      ],
+      "final_confidence": 0.7237624772922833,
+      "include_in_graph": true
+    },
+    {
+      "source": "geographic_reach_cities",
+      "target": "total_revenue",
+      "r2": 0.8710391906445408,
+      "r2_reverse": 0.8472677278565665,
+      "correlation": 0.9524421083268733,
+      "direction_confidence": 0.027290922203379,
+      "p_value": 4.4073137835022084e-44,
+      "feasibility": "FEASIBLE",
+      "mechanism": "As Olist expands its geographic reach, it increases the potential customer base and revenue opportunities.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "geographic expansion",
+        "customer acquisition"
+      ],
+      "final_confidence": 0.9226235143867245,
+      "include_in_graph": true
+    },
+    {
+      "source": "market_concentration_sellers",
+      "target": "geographic_reach_cities",
+      "r2": 0.8208239753394233,
+      "r2_reverse": 0.8060722601880238,
+      "correlation": 0.8935367179015485,
+      "direction_confidence": 0.017971837561517916,
+      "p_value": 2.98344144857299e-30,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Similarly, a high concentration of sellers in specific cities can drive geographic reach and revenue growth.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "market competition",
+        "customer acquisition"
+      ],
+      "final_confidence": 0.892494385203654,
+      "include_in_graph": true
+    },
+    {
+      "source": "delivery_delay_days",
+      "target": "late_delivery_rate",
+      "r2": 0.8177957336683244,
+      "r2_reverse": -0.3744794133062106,
+      "correlation": 0.6400351861654281,
+      "direction_confidence": 1.4579131412515893,
+      "p_value": 5.5716571905578413e-11,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Longer delivery times lead to a higher rate of late deliveries, as customers are less likely to receive their orders on time.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "delivery performance",
+        "customer satisfaction"
+      ],
+      "final_confidence": 0.8906774402009946,
+      "include_in_graph": true
+    },
+    {
+      "source": "order_delivered_rate",
+      "target": "review_submission_rate",
+      "r2": 0.7955494235775391,
+      "r2_reverse": 0.7045428852071365,
+      "correlation": 0.8526716445152994,
+      "direction_confidence": 0.11439457521212391,
+      "p_value": 7.771118944483463e-25,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Order delivery rate influences review submission rate as customers are more likely to leave reviews when they have received their orders.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "delivery_performance"
+      ],
+      "final_confidence": 0.8773296541465234,
+      "include_in_graph": true
+    },
+    {
+      "source": "review_submission_rate",
+      "target": "repeat_customer_rate",
+      "r2": 0.7790868834526302,
+      "r2_reverse": 0.426870487254266,
+      "correlation": 0.8036579374849632,
+      "direction_confidence": 0.4520887255057729,
+      "p_value": 3.562174870256935e-20,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Review submission rate influences repeat customer rate as customers are more likely to return for repeat purchases when they have positive experiences.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "customer_satisfaction"
+      ],
+      "final_confidence": 0.8674521300715781,
+      "include_in_graph": true
+    },
+    {
+      "source": "customer_satisfaction_score",
+      "target": "late_delivery_rate",
+      "r2": 0.7536402978261596,
+      "r2_reverse": 0.5400789980997054,
+      "correlation": -0.7915411994165545,
+      "direction_confidence": 0.28337298356054186,
+      "p_value": 3.1939906861818845e-19,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Customer satisfaction score influences late delivery rate as high satisfaction is often linked to timely deliveries.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "delivery_performance"
+      ],
+      "final_confidence": 0.8521841786956957,
+      "include_in_graph": true
+    },
+    {
+      "source": "net_promoter_score",
+      "target": "late_delivery_rate",
+      "r2": 0.7536402978261596,
+      "r2_reverse": 0.5400789980997045,
+      "correlation": -0.7915411994165532,
+      "direction_confidence": 0.2833729835605431,
+      "p_value": 3.1939906861818845e-19,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Net promoter score influences late delivery rate as a high net promoter score is often linked to positive customer experiences, which are negatively affected by long delivery times.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "delivery_performance"
+      ],
+      "final_confidence": 0.8521841786956957,
+      "include_in_graph": true
+    },
+    {
+      "source": "products_per_order",
+      "target": "repeat_customer_rate",
+      "r2": 0.7039689822191996,
+      "r2_reverse": 0.47695535123528676,
+      "correlation": 0.7701791845187699,
+      "direction_confidence": 0.3224767521265959,
+      "p_value": 1.0947361052183375e-17,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Products per order influences repeat customer rate as customers are more likely to return for repeat purchases when they have multiple products in a single order.",
+      "confidence": "MEDIUM",
+      "alternative": null,
+      "domain_factors": [
+        "customer_satisfaction"
+      ],
+      "final_confidence": 0.8223813893315197,
+      "include_in_graph": true
+    },
+    {
+      "source": "avg_delivery_time_days",
+      "target": "late_delivery_rate",
+      "r2": 0.6409018956007326,
+      "r2_reverse": 0.39510507171718856,
+      "correlation": 0.6057654317897295,
+      "direction_confidence": 0.3835170804935018,
+      "p_value": 1.0275469893963191e-09,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Average delivery time days influences late delivery rate as longer average delivery times are more likely to result in late deliveries.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "delivery_performance"
+      ],
+      "final_confidence": 0.7845411373604396,
+      "include_in_graph": true
+    },
+    {
+      "source": "net_promoter_score",
+      "target": "avg_delivery_time_days",
+      "r2": 0.6020468879615258,
+      "r2_reverse": 0.5924111803795173,
+      "correlation": -0.8608493609831798,
+      "direction_confidence": 0.016004912199835616,
+      "p_value": 8.872513068461814e-26,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Net promoter score influences average delivery time days as a high net promoter score is often linked to timely deliveries, which reduces average delivery times.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "delivery_performance"
+      ],
+      "final_confidence": 0.7612281327769155,
+      "include_in_graph": true
+    },
+    {
+      "source": "customer_satisfaction_score",
+      "target": "avg_delivery_time_days",
+      "r2": 0.6020468879615258,
+      "r2_reverse": 0.5924111803795233,
+      "correlation": -0.8608493609831794,
+      "direction_confidence": 0.016004912199825656,
+      "p_value": 8.872513068461814e-26,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Customer satisfaction score influences average delivery time days as high satisfaction is often linked to timely deliveries, which reduces average delivery times.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "delivery_performance"
+      ],
+      "final_confidence": 0.7612281327769155,
+      "include_in_graph": true
+    },
+    {
+      "source": "order_delivered_rate",
+      "target": "repeat_customer_rate",
+      "r2": 0.5694821920983923,
+      "r2_reverse": 0.4090741565741698,
+      "correlation": 0.6660337907239029,
+      "direction_confidence": 0.2816734882141987,
+      "p_value": 4.729202973488403e-12,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Order delivery rate influences repeat customer rate as timely deliveries are more likely to result in repeat purchases.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "customer_satisfaction"
+      ],
+      "final_confidence": 0.7416893152590354,
+      "include_in_graph": true
+    },
+    {
+      "source": "order_count",
+      "target": "geographic_reach_states",
+      "r2": 0.5065023627747217,
+      "r2_reverse": 0.11680004405452749,
+      "correlation": 0.4758427985529836,
+      "direction_confidence": 0.7693988169874009,
+      "p_value": 4.7712368060637215e-06,
+      "feasibility": "QUESTIONABLE",
+      "mechanism": "Order count influences geographic reach states as the number of orders might be influenced by various factors, such as marketing campaigns or seasonal fluctuations.",
+      "confidence": "LOW",
+      "alternative": "Alternative explanation: Order count might not directly influence geographic reach states. Instead, other factors like product offerings or marketing strategies could be more significant drivers of geographic reach.",
+      "domain_factors": [
+        "marketing",
+        "product_offerings"
+      ],
+      "final_confidence": 0.5039014176648331,
+      "include_in_graph": true
+    },
+    {
+      "source": "unique_customers",
+      "target": "geographic_reach_states",
+      "r2": 0.5065023627747217,
+      "r2_reverse": 0.11680004405452749,
+      "correlation": 0.4758427985529836,
+      "direction_confidence": 0.7693988169874009,
+      "p_value": 4.7712368060637215e-06,
+      "feasibility": "FEASIBLE",
+      "mechanism": "As Olist expands to new customers, it also increases its geographic reach by entering new states.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "expanding customer base",
+        "geographic expansion"
+      ],
+      "final_confidence": 0.703901417664833,
+      "include_in_graph": true
+    },
+    {
+      "source": "customer_acquisition",
+      "target": "geographic_reach_states",
+      "r2": 0.5065023627747217,
+      "r2_reverse": 0.11680004405452749,
+      "correlation": 0.4758427985529836,
+      "direction_confidence": 0.7693988169874009,
+      "p_value": 4.7712368060637215e-06,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Acquiring new customers implies expanding into new geographic areas, contributing to increased state-level reach.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "customer acquisition",
+        "geographic expansion"
+      ],
+      "final_confidence": 0.703901417664833,
+      "include_in_graph": true
+    },
+    {
+      "source": "customer_growth_rate",
+      "target": "revenue_growth_rate",
+      "r2": 0.503347236631017,
+      "r2_reverse": 0.4214203260018251,
+      "correlation": 0.8448867307189583,
+      "direction_confidence": 0.1627642006689889,
+      "p_value": 5.4478667950291404e-24,
+      "feasibility": "FEASIBLE",
+      "mechanism": "As customer growth accelerates, revenue growth tends to follow, driven by increased purchasing power and loyalty.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "customer growth",
+        "revenue growth"
+      ],
+      "final_confidence": 0.7020083419786103,
+      "include_in_graph": true
+    },
+    {
+      "source": "order_growth_rate",
+      "target": "revenue_growth_rate",
+      "r2": 0.503347236631017,
+      "r2_reverse": 0.4214203260018251,
+      "correlation": 0.8448867307189583,
+      "direction_confidence": 0.1627642006689889,
+      "p_value": 5.4478667950291404e-24,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Growth in orders leads to increased revenue, as customers place more frequent and larger orders.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "order growth",
+        "revenue growth"
+      ],
+      "final_confidence": 0.7020083419786103,
+      "include_in_graph": true
+    },
+    {
+      "source": "geographic_reach_cities",
+      "target": "geographic_reach_states",
+      "r2": 0.49042996683118445,
+      "r2_reverse": 0.2734618888038677,
+      "correlation": 0.5923967029858315,
+      "direction_confidence": 0.44240379402019986,
+      "p_value": 2.923120683003692e-09,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Expanding to new cities implies a broader geographic reach within existing states.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "city-level expansion",
+        "state-level reach"
+      ],
+      "final_confidence": 0.6942579800987108,
+      "include_in_graph": true
+    },
+    {
+      "source": "avg_delivery_time_days",
+      "target": "avg_freight_value",
+      "r2": 0.47787369253846923,
+      "r2_reverse": -0.08400163938267724,
+      "correlation": -0.3297100275973044,
+      "direction_confidence": 1.1757820961778829,
+      "p_value": 0.0021935695139604404,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Longer delivery times may lead to increased freight costs due to higher fuel consumption and potential rerouting.",
+      "confidence": "MEDIUM",
+      "alternative": null,
+      "domain_factors": [
+        "delivery time",
+        "freight costs"
+      ],
+      "final_confidence": 0.6867242155230815,
+      "include_in_graph": true
+    },
+    {
+      "source": "unique_products_sold",
+      "target": "delivery_delay_days",
+      "r2": 0.46207301437715986,
+      "r2_reverse": 0.24549190275549226,
+      "correlation": 0.5507828965766292,
+      "direction_confidence": 0.468716209090035,
+      "p_value": 5.686661813139009e-08,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Offering more products may lead to increased delivery complexity and delays, especially if logistics infrastructure is not scaled accordingly.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "product offerings",
+        "delivery delays"
+      ],
+      "final_confidence": 0.677243808626296,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "delivery_delay_days",
+      "r2": 0.4619856023246154,
+      "r2_reverse": 0.20894996262658794,
+      "correlation": 0.51412889638308,
+      "direction_confidence": 0.5477132586487647,
+      "p_value": 5.666283683170079e-07,
+      "feasibility": "QUESTIONABLE",
+      "mechanism": "This relationship may be influenced by other factors, such as product mix or customer segments. Further analysis is needed to understand the causal link.",
+      "confidence": "MEDIUM",
+      "alternative": "Alternative explanation: Total revenue might affect delivery delays due to increased order volume or changes in logistics infrastructure.",
+      "domain_factors": [
+        "revenue growth",
+        "delivery delays"
+      ],
+      "final_confidence": 0.47719136139476925,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_revenue",
+      "target": "geographic_reach_states",
+      "r2": 0.3888894036392522,
+      "r2_reverse": 0.10601250226843695,
+      "correlation": 0.48957176045685447,
+      "direction_confidence": 0.7273967835678599,
+      "p_value": 2.2888802571037883e-06,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Increased revenue may drive geographic expansion, as Olist has more resources to invest in new markets.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "revenue growth",
+        "geographic expansion"
+      ],
+      "final_confidence": 0.6333336421835514,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_items_sold",
+      "target": "geographic_reach_states",
+      "r2": 0.3280043672894063,
+      "r2_reverse": 0.12307772737446898,
+      "correlation": 0.478289815480164,
+      "direction_confidence": 0.6247680224761322,
+      "p_value": 4.195437361362877e-06,
+      "feasibility": "FEASIBLE",
+      "mechanism": "Selling more items across various geographic areas contributes to increased state-level reach.",
+      "confidence": "HIGH",
+      "alternative": null,
+      "domain_factors": [
+        "item sales",
+        "geographic expansion"
+      ],
+      "final_confidence": 0.5968026203736438,
+      "include_in_graph": true
+    },
+    {
+      "source": "total_items_sold",
+      "target": "late_delivery_rate",
+      "r2": 0.3118265561427346,
+      "r2_reverse": 0.23557929745145145,
+      "correlation": 0.5248215826827509,
+      "direction_confidence": 0.24451816944154664,
+      "p_value": 2.979274318903125e-07,
+      "feasibility": "FEASIBLE",
+      "mechanism": "As total items sold increases, the rate of late deliveries also tends to increase. This may be due to an increased workload for the delivery team or a strain on resources.",
+      "confidence": "HIGH",
+      "alternative": "",
+      "domain_factors": [
+        "order volume",
+        "logistics capacity"
+      ],
+      "final_confidence": 0.5870959336856407,
+      "include_in_graph": true
+    }
+  ],
+  "kpi_analyses": {
+    "total_revenue": [
+      {
+        "factor": "total_items_sold",
+        "r2": 0.6242909715921052,
+        "path_length": 3,
+        "path": [
+          "total_items_sold",
+          "market_concentration_sellers",
+          "geographic_reach_cities",
+          "total_revenue"
+        ],
+        "multivariate_importance": 0.45554799342820845
+      },
+      {
+        "factor": "unique_products_sold",
+        "r2": 0.652090535906281,
+        "path_length": 3,
+        "path": [
+          "unique_products_sold",
+          "market_concentration_sellers",
+          "geographic_reach_cities",
+          "total_revenue"
+        ],
+        "multivariate_importance": 0.2025363992426176
+      },
+      {
+        "factor": "market_concentration_sellers",
+        "r2": 0.7149698511412859,
+        "path_length": 2,
+        "path": [
+          "market_concentration_sellers",
+          "geographic_reach_cities",
+          "total_revenue"
+        ],
+        "multivariate_importance": 0.18841721840876363
+      },
+      {
+        "factor": "geographic_reach_cities",
+        "r2": 0.8710391906445408,
+        "path_length": 1,
+        "path": [
+          "geographic_reach_cities",
+          "total_revenue"
+        ],
+        "multivariate_importance": 0.15349838892041032
+      }
+    ],
+    "revenue_growth_rate": [
+      {
+        "factor": "customer_growth_rate",
+        "r2": 0.503347236631017,
+        "path_length": 1,
+        "path": [
+          "customer_growth_rate",
+          "revenue_growth_rate"
+        ],
+        "multivariate_importance": 0.5042540680269877
+      },
+      {
+        "factor": "order_growth_rate",
+        "r2": 0.503347236631017,
+        "path_length": 1,
+        "path": [
+          "order_growth_rate",
+          "revenue_growth_rate"
+        ],
+        "multivariate_importance": 0.4957459319730123
+      }
+    ],
+    "revenue_ma4": []
+  }
+}
